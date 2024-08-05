@@ -6,7 +6,7 @@ const Logout = () => {
 	const { authUser, setAuthUser } = useAuthContext();
 	const handleLogout = async () => {
 		try {
-			const res = await fetch("http://localhost:8080/api/auth/logout", {
+			const res = await fetch("https://repohub-t35f.onrender.com/api/auth/logout", {
 				method: 'GET',
 				credentials: 'include' 
 			})
