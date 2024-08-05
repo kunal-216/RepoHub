@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 8080;
 connectMongoDB();
 
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: 'https://repohub216.onrender.com/',
     credentials: true 
   };
   
