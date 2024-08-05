@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Spinner from '../components/Spinner';
 import Repos from '../components/Repos';
+import { toast } from 'react-toastify';
 
 const ExplorePage = () => {
 	// https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc&per_page=10
