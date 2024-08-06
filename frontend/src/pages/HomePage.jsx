@@ -16,7 +16,7 @@ const HomePage = () => {
   const getUserProfileandRepos = async(username="kunal-216") => {
     setLoading(true)
     try {
-      const res = await fetch(`https://repohub-t35f.onrender.com/api/users/profile/${username}`)
+      const res = await fetch(`/api/users/profile/${username}`)
       const {repos,userProfile} = await res.json();
       
       setRepos(repos);

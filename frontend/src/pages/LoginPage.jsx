@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const LoginPage = () => {
 	const handleLoginWithGithub = () => {
-		window.open("https://repohub-t35f.onrender.com/api/auth/github","_self");
+		window.open("/api/auth/github","_self");
 	}
 	return (
 		<div className='flex flex-col items-center justify-center px-6 py-8 mx-auto h-screen lg:py-0'>

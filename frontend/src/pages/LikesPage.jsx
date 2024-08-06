@@ -9,7 +9,7 @@ const LikesPage = () => {
   useEffect(() => {
     const getLikes = async () => {
       try {
-        const res = await fetch("https://repohub-t35f.onrender.com/api/users/likes", { method: 'GET', credentials: "include" });
+        const res = await fetch("/api/users/likes", { method: 'GET', credentials: "include" });
         const data = await res.json();
         if (data.error) throw new Error(data.error);
 

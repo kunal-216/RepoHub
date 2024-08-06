@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const SignUpPage = () => {
 
   const handleLoginWithGithub = () => {
-    window.open("https://repohub-t35f.onrender.com/api/auth/github","_self");
+    window.open("/api/auth/github","_self");
   }
 
   return (

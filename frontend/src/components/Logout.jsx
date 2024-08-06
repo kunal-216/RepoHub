@@ -6,12 +6,11 @@ const Logout = () => {
 	const { authUser, setAuthUser } = useAuthContext();
 	const handleLogout = async () => {
 		try {
-			const res = await fetch("https://repohub-t35f.onrender.com/api/auth/logout", {
+			const res = await fetch("/api/auth/logout", {
 				method: 'GET',
 				credentials: 'include' 
 			})
 			const data = await res.json();
-			console.log(data);
 			setAuthUser(null);
 		} catch (error) {
 			toast.error(error.message)

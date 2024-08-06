@@ -8,7 +8,7 @@ const LikeProfile = ({ userProfile }) => {
     const isOwnProfile = authUser?.username === userProfile.login;
     const handleLikeProfile = async () => {
         try {
-            const res = await fetch(`https://repohub-t35f.onrender.com/api/users/likes/${userProfile.login}`, {
+            const res = await fetch(`/api/users/likes/${userProfile.login}`, {
                 method: 'POST',
                 credentials: "include",
             })

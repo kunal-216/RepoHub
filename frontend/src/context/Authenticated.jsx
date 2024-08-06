@@ -15,7 +15,7 @@ export const AuthContextProvider = ({ children }) => {
         const checkUserLoggedIn = async () => {
             setLoading(true)
             try {
-                const res = await fetch('https://repohub-t35f.onrender.com/api/auth/check', {
+                const res = await fetch('/api/auth/check', {
                     method: 'GET',
                     credentials: 'include'
                 })
